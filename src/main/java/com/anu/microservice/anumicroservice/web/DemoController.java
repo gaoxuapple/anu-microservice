@@ -1,7 +1,5 @@
 package com.anu.microservice.anumicroservice.web;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,15 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class DemoController {
 
-    @Value("${com.anu.name}")
-    private String name;
-    @Value("${com.anu.want}")
-    private String want;
 
     @RequestMapping(value = "/index",
                     method = RequestMethod.GET)
     public String index(){
-        return name + "," + want;
+        return "hello world!";
     }
+
 
 }
