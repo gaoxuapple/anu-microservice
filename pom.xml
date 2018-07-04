@@ -5,24 +5,34 @@
 
 	<groupId>com.anu.microservice</groupId>
 	<artifactId>anu-microservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>anu-microservice</name>
-	<description>Demo project for Spring Boot</description>
+	<url>https://github.com/gaoxuapple/anu-microservice</url>
+	<description>Anu microservice project for Spring Boot</description>
+
+	<developers>
+		<developer>
+			<name>gaoxu</name>
+			<email>anhui_gaoxu@126.com</email>
+			<url>gaoxuapple.github.com</url>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.15.BUILD-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>1.5.9.RELEASE</version>
+		<relativePath/>
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Edgware.BUILD-SNAPSHOT</spring-cloud.version>
+		<spring-cloud.version>Edgware.SR3</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -65,21 +75,21 @@
 		</dependency>
 
 		<!--  kafka   -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- json -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.31</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- 连接redis 集群-->
 		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-		<dependency>
+		<!--<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.9.0</version>
@@ -87,35 +97,35 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- Spring Boot Mybatis 依赖 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.2.0</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- MySQL 连接驱动依赖 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.39</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- Druid 数据连接池依赖 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>1.1.7</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- 分页插件 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.1.2</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- poi插件 xls -->
 		<dependency>
